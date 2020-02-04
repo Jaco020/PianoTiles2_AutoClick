@@ -1,5 +1,6 @@
 # PianoTiles2_AutoClick
-As the name says it basically play game for you.
+As the name says it basically play game for you.  
+*Created on 04.02.2020*
 
 ## Info
 Program was created to test a PIL and pyautogui functions. Inspired by CodeBullet
