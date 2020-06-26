@@ -2,7 +2,6 @@ from PIL import ImageGrab, ImageOps  # for taking screen
 import pyautogui  # for mouse operations
 import time
 pyautogui.PAUSE = 0.01
-pyautogui.MINIMUM_DURATION = 0.01
 
 
 def locate_tiles():
@@ -33,12 +32,13 @@ def locate_tiles():
                     if pix[act_x, act_y] == color or pix[act_x, act_y] == 1:  # check if color == start,normal,long tile
                         if score > 1000:
                             act_y += 10
-                        if score > 1300:
-                            act_y += 20
-                        if score > 1700:
-                            act_y += 20
-                        pyautogui.moveTo(act_x, act_y)
-                        pyautogui.click()
+                        if score > 1400:
+                            act_y += 10
+                        if score > 2100:
+                            act_y += 10
+                        if score > 2800:
+                            act_y += 10
+                        pyautogui.click(act_x, act_y)
                         run = False
                         first = False
                         score += 1  # current score
